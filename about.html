@@ -9,13 +9,74 @@
         <title>About</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+        <header>
+            <!-- Begin navigation -->
+            <div class="row">
+            <!-- https://getbootstrap.com/docs/4.3/layout/grid/#grid-options for grid options -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="./index.html">Layout</a> <!-- Layout is a stand-in for a logo or other information you want to be more prominant than the other navigation menu items -->
+                        <!-- This button is for controlling the responsive Navigation button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <!-- nav-item active is telling the navbar to display as active -->
+                                <li class="nav-item active">
+                                    <a href="./index.html" class="nav-link">Bootstrap Demo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./form.html" class="nav-link">Form</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+    
+                </div> <!-- This ends the 12-column mid DIV (aka) "col-md-12" -->
+            </div> <!-- End the row -->
+        </header>
+        <!-- MAIN Section  start -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <h1>Article Header</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolore reprehenderit dolor dolorum iste minus at optio dolores suscipit ad, totam laborum! Numquam obcaecati maxime enim? Doloribus quidem dolorem omnis?</p>
+                            <div class="card-img">
+                                <img src="https://placehold.it/250x250" alt="image">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veniam voluptate necessitatibus fuga voluptatem quam eveniet magnam incidunt, adipisci amet, nemo perspiciatis, ipsam veritatis ratione excepturi officia labore architecto eum?</p>
+                        </div> <!-- End of Card -->
+                    </div> <!-- End of Column col-md-9 -->
+                    <div class="col-md-3"></div> <!-- Filler for col-md-3 -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id at excepturi non enim rem ut cum ex dolores, voluptatem sint deserunt quos voluptatibus magnam necessitatibus natus vero nihil quidem!</p>
+                </div> <!-- End of first col-md-4 -->
+                <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id at excepturi non enim rem ut cum ex dolores, voluptatem sint deserunt quos voluptatibus magnam necessitatibus natus vero nihil quidem!</p>
+                </div> <!-- End of second col-md-4 -->
+                <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id at excepturi non enim rem ut cum ex dolores, voluptatem sint deserunt quos voluptatibus magnam necessitatibus natus vero nihil quidem!</p>
+                </div> <!-- End of third col-md-4 -->
+            </div>
+        </footer>
         <script src="" async defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     </body>
 </html>

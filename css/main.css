@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: steelblue;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.container > .row { /* Child selector versus Descendant selector, which has a space */
+    margin-top: 100px;
+}
+
+.card {
+    padding: 5%;
+    margin-top: 20px;
+}
+
+.card-img > img {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 90%;
+    font-style: italic;
+}
+
+.card-text > p {
+    text-align: center;
+    padding: 5px;
+}
+
+.card > button {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.description {
+    margin-top: 20%;
+}
+
+footer {
+    background-color: darkblue !important; /* Sets precedence over all others */
+    margin-top: 100px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 5%;
+}
